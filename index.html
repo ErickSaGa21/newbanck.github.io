@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>
+      Box model y floats
+    </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <img src="ganancia.png" alt="banco">
+<div class="login">
+    <!-- Registro -->
+       <div class="info">
+        <h2>Registro</h2>
+        <label for="nombre" id="rg">
+          <i class='bx bx-user' ></i>
+          <input type="text" class="input" id="nombre" placeholder="Name" required>
+        </label>
+       
+        <label for="correo" id="rg">
+          <i class='bx bx-envelope'></i>
+          <input type="email" class="input" id="correo" placeholder="E-mail" required>
+        </label>
+       
+        <label for="contraseña" id="rg">
+          <i class='bx bx-lock-alt' ></i>
+          <input type="password" class="input" id="contraseña" placeholder="Password" required>
+        </label>
+        <button class="btn" onclick= registrarCuenta()>Registrarse</button>
+       </div>
+  <!-- Inicio de Sesión -->
+  <div class="headin">
+    <h2>Inicio de Sesión</h2>
+    <div class="icons">
+      <i class='bx bxl-google'></i>
+      <i class='bx bxl-github'></i>
+      <i class='bx bxl-linkedin-square' ></i>
+    </div>
+    <label for="correoInicio" id="rg">
+      <i class='bx bx-envelope'></i>
+      <input type="email" class="input" id="correoInicio" placeholder="User" required>
+    </label>
+  
+    <label for="contraseñaInicio" id="rg">
+      <i class='bx bx-lock-alt' ></i>
+      <input type="password" class="input" id="contraseñaInicio" placeholder="Password" required>
+    </label>
+    <button class="btn" id="sesion" onclick= iniciarSesion()>Iniciar Sesión</button>
+  </div>
+</div>              
+
+<div class="usuario hide">
+     <h2>Es bueno tenerte de vuelta</h2>
+     <h2>Bienvenido: <p id="nombreUsuario"></p> </h2>
+     <img src="usuario.png" alt="user">
+     <p id="correoUsuario"></p>
+     <p id="saldoUsuario"></p>
+
+     <div class="options">
+          <button class="btn" id="Retirar" onclick= retirar() type="submit">Retirar</button>
+          <button class="btn" id="Depositar" onclick= depositar() type="submit">Depositar</button>
+          <button class="btn" id="Transferir" onclick= transferir() type="submit">Transferir</button>
+     </div>
+</div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
